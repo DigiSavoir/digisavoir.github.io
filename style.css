@@ -1,356 +1,99 @@
-/* ---- Style global ---- */
+/* ------------------------------
+   STYLE GLOBAL DU SITE
+--------------------------------*/
 body {
-  font-family: "Poppins", sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f6f8;
-  color: #333;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f6f8fc;
+    color: #222;
+    line-height: 1.7;
 }
 
-/* ---- En-tête ---- */
-header {
-  background-color: #004aad;
-  color: white;
-  text-align: center;
-  padding: 15px 10px;
+h1, h2, h3, h4 {
+    font-weight: 600;
+    color: #0a1e3f;
 }
 
-header img {
-  height: 80px;
-  width: auto;
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
 }
 
-header h1 {
-  margin: 5px 0;
-  font-size: 2.2rem;
-  color: #ffcc00; /* 🟡 Couleur du texte Digi Savoir */
+/* ------------------------------
+   HEADER DU BLOG
+--------------------------------*/
+.blog-header {
+    background: linear-gradient(135deg, #ffb400, #ff7700);
+    padding: 60px 0;
+    text-align: center;
+    color: white;
 }
 
-header p {
-  font-size: 1.1rem;
-  color: #e0e0e0;
+.blog-header h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
 }
 
-/* ---- Section d’accueil avec image ---- */
-.hero {
-  position: relative;
-  width: 100%;
-  height: 65vh;
-  background: url("backgroundclasse.jpg") no-repeat center center/cover;
+/* ------------------------------
+   CARTES DU BLOG
+--------------------------------*/
+.blog-list {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-top: 40px;
 }
 
-.hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
+.blog-card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+    border-left: 6px solid #ff9f00;
 }
 
-/* ---- Présentation du site ---- */
-.presentation {
-  background-color: white;
-  text-align: center;
-  padding: 50px 20px;
+.blog-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.18);
 }
 
-.presentation h2 {
-  color: #004aad;
-  font-size: 2rem;
-  margin-bottom: 20px;
+.blog-card h2 {
+    color: #0b2a50;
+    font-size: 22px;
+    margin-bottom: 10px;
 }
 
-.presentation p {
-  font-size: 1.1rem;
-  max-width: 900px;
-  margin: auto;
-  line-height: 1.7;
+.blog-card p {
+    font-size: 15px;
+    opacity: 0.8;
+    margin-bottom: 15px;
 }
 
-/* ---- Section des cartes (Cours, Exercices, Blog) ---- */
-.section-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 25px;
-  padding: 50px 20px;
-  background-color: #f4f6f8;
+/* BOUTON LIRE */
+.read-more {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ff8800;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
 }
 
-.card {
-  background: white;
-  width: 280px;
-  border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  padding: 25px 15px;
-  transition: transform 0.3s, box-shadow 0.3s;
+.read-more:hover {
+    background: #e06f00;
 }
 
-.card:hover {
-  transform: translateY(-7px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-}
-
-.card h3 {
-  color: #004aad;
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
-
-.card p {
-  color: #555;
-  font-size: 1rem;
-}
-
-.card a {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 10px 20px;
-  background-color: #004aad;
-  color: white;
-  text-decoration: none;
-  border-radius: 25px;
-  transition: background-color 0.3s;
-}
-
-.card a:hover {
-  background-color: #ffcc00;
-  color: #004aad;
-}
-
-/* ---- Avant propos ---- */
-.avant-propos {
-  background-color: #004aad;
-  color: white;
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.avant-propos h2 {
-  color: #ffcc00;
-  margin-bottom: 15px;
-}
-
-.avant-propos p {
-  font-size: 1.1rem;
-  max-width: 800px;
-  margin: auto;
-}
-
-/* ---- Pied de page ---- */
+/* ------------------------------
+   FOOTER
+--------------------------------*/
 footer {
-  background-color: #002b6b;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  font-size: 0.9rem;
+    text-align: center;
+    margin-top: 50px;
+    padding: 30px 0;
+    font-size: 14px;
+    color: #555;
 }
-/* --- Mise en page des classes modernes --- */
-.classes-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 25px;
-  padding: 40px 10%;
-  background-color: #f8f9fa;
-}
-
-.classe-card {
-  background: white;
-  border-radius: 16px;
-  padding: 25px 15px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  text-align: center;
-  transition: all 0.3s ease;
-  position: relative;
-}
-
-.classe-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
-}
-
-.classe-card h3 {
-  color: #1976d2;
-  font-size: 1.6rem;
-  margin-bottom: 15px;
-}
-
-.classe-card ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.classe-card ul li {
-  margin: 8px 0;
-}
-
-.classe-card a {
-  background-color: #1976d2;
-  color: white;
-  text-decoration: none;
-  padding: 8px 16px;
-  border-radius: 8px;
-  font-weight: 500;
-  transition: background-color 0.3s;
-  display: inline-block;
-}
-
-.classe-card a:hover {
-  background-color: #0d47a1;
-}
-/* --- Blog moderne --- */
-.blog-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  padding: 50px 10%;
-  background-color: #f9fafc;
-}
-
-.blog-card {
-  background: white;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.blog-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
-}
-
-.blog-card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.blog-content {
-  padding: 20px;
-}
-
-.blog-content h3 {
-  color: #1976d2;
-  font-size: 1.4rem;
-  margin-bottom: 10px;
-}
-
-.blog-content p {
-  font-size: 1rem;
-  color: #444;
-  margin-bottom: 15px;
-}
-
-.read-more {
-  display: inline-block;
-  background-color: #1976d2;
-  color: white;
-  padding: 8px 16px;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.read-more:hover {
-  background-color: #0d47a1;
-}
-/* --- Section Blog --- */
-.blog-section {
-  padding: 80px 20px;
-  background: #f8faff;
-  text-align: center;
-}
-
-.section-title {
-  font-size: 2.2rem;
-  color: #1976d2;
-  margin-bottom: 10px;
-}
-
-.section-subtitle {
-  font-size: 1.1rem;
-  color: #555;
-  margin-bottom: 50px;
-}
-
-/* --- Conteneur de cartes --- */
-.blog-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-
-/* --- Carte de blog --- */
-.blog-card {
-  background: white;
-  border-radius: 16px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  max-width: 380px;
-}
-
-.blog-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
-
-/* --- Image du blog --- */
-.blog-card img {
-  width: 100%;
-  height: 230px;
-  object-fit: cover;
-}
-
-/* --- Contenu du blog --- */
-.blog-content {
-  padding: 20px;
-  text-align: left;
-}
-
-.blog-content h3 {
-  font-size: 1.4rem;
-  color: #1976d2;
-  margin-bottom: 10px;
-}
-
-.blog-content p {
-  font-size: 1rem;
-  color: #444;
-  line-height: 1.6;
-  margin-bottom: 15px;
-}
-
-/* --- Lien "Lire l’article" --- */
-.read-more {
-  display: inline-block;
-  text-decoration: none;
-  color: white;
-  background: #1976d2;
-  padding: 10px 20px;
-  border-radius: 8px;
-  font-weight: 600;
-  transition: background 0.3s ease;
-}
-
-.read-more:hover {
-  background: #0d47a1;
-}
-
-/* --- Pied de page --- */
-.main-footer {
-  background: #1976d2;
-  color: white;
-  padding: 25px;
-  text-align: center;
-  margin-top: 60px;
-  font-size: 0.95rem;
-}
-
-
