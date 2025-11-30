@@ -1,25 +1,94 @@
-/* Conteneur des 3 blocs */
-.cards-container {
-  display: flex;
-  justify-content: center;   /* centre horizontalement */
-  align-items: stretch;      /* même hauteur */
-  gap: 25px;                 /* espace entre les blocs */
-  margin-top: 40px;
-}
-
-/* Style de chaque bloc */
-.card {
-  width: 300px;              /* taille fixe = alignement parfait */
-  background: white;
-  padding: 25px;
-  border-radius: 12px;
+/* --- Section Blog --- */
+.blog-section {
+  padding: 80px 20px;
+  background: #f8faff;
   text-align: center;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-/* Effet au survol (optionnel mais professionnel) */
-.card:hover {
-  transform: translateY(-6px);
-  transition: .3s;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+.section-title {
+  font-size: 2.2rem;
+  color: #1976d2;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 50px;
+}
+
+/* --- Conteneur de cartes --- */
+.blog-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* --- Carte de blog --- */
+.blog-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 380px;
+}
+
+.blog-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* --- Image du blog --- */
+.blog-card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+/* --- Contenu du blog --- */
+.blog-content {
+  padding: 20px;
+  text-align: left;
+}
+
+.blog-content h3 {
+  font-size: 1.4rem;
+  color: #1976d2;
+  margin-bottom: 10px;
+}
+
+.blog-content p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* --- Lien "Lire l’article" --- */
+.read-more {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background: #1976d2;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.read-more:hover {
+  background: #0d47a1;
+}
+
+/* --- Pied de page --- */
+.main-footer {
+  background: #1976d2;
+  color: white;
+  padding: 25px;
+  text-align: center;
+  margin-top: 60px;
+  font-size: 0.95rem;
 }
