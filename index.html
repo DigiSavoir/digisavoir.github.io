@@ -1,69 +1,71 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DigiSavoir - Apprendre en ligne</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DigiSavoir - Blog</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- En-tête -->
   <header>
-    <img src="DIGI 3.png" alt="Logo Digi Savoir" />
+    <img src="assets/DIGI3.png" alt="Logo DigiSavoir" class="logo">
     <h1>DigiSavoir</h1>
-    <p>Apprendre autrement, partout et à tout moment</p>
+    <p class="slogan">Apprendre plus simplement 🌞</p>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="cours.html">Cours</a></li>
+        <li><a href="exercices.html">Exercices</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- Section d'accueil avec image -->
-  <section class="hero">
-    <div class="hero-overlay"></div>
-  </section>
+  <!-- Section Blog -->
+  <section class="blog-section">
+    <h2 class="section-title">Blog Éducatif</h2>
+    <p class="section-subtitle">Découvrez nos articles sur l’apprentissage et les énergies renouvelables</p>
 
-  <!-- Présentation du site -->
-  <section class="presentation">
-    <h2>Bienvenue sur DigiSavoir</h2>
-    <p>
-      DigiSavoir est une plateforme éducative en ligne dédiée aux élèves du collège et du lycée au Sénégal. 
-      Notre mission est de rendre l’apprentissage des Mathématiques et de la Physique-Chimie accessible, 
-      clair et interactif. Explore nos cours, exercices et articles pour progresser à ton rythme.
-    </p>
-  </section>
+    <div class="blog-container">
 
-  <!-- Section des cartes principales -->
-  <section class="section-cards">
-    <div class="card">
-      <h3>Cours</h3>
-      <p>Découvre les leçons organisées par niveaux : de la 6e à la Terminale.</p>
-      <a href="cours.html">Voir les cours</a>
+      <!-- Carte 1 -->
+      <div class="blog-card">
+        <img src="assets/blog1.png" alt="Le numérique au service de l’éducation">
+        <div class="blog-content">
+          <h3>Le numérique au service de l’éducation</h3>
+          <p>Comment les outils digitaux transforment l’enseignement et favorisent l’accès à l’éducation pour tous.</p>
+          <a href="#" class="read-more">Lire l’article</a>
+        </div>
+      </div>
+
+      <!-- Carte 2 -->
+      <div class="blog-card">
+        <img src="assets/blog2.png" alt="L’énergie solaire à l’école">
+        <div class="blog-content">
+          <h3>L’énergie solaire à l’école</h3>
+          <p>Des établissements adoptent le solaire pour alimenter les classes et sensibiliser les jeunes aux énergies vertes.</p>
+          <a href="#" class="read-more">Lire l’article</a>
+        </div>
+      </div>
+
+      <!-- Carte 3 -->
+      <div class="blog-card">
+        <img src="assets/blog3.png" alt="Les sciences autrement">
+        <div class="blog-content">
+          <h3>Les sciences autrement</h3>
+          <p>Apprendre la physique et les mathématiques de manière pratique grâce à des projets et expériences simples.</p>
+          <a href="#" class="read-more">Lire l’article</a>
+        </div>
+      </div>
+
     </div>
-
-    <div class="card">
-      <h3>Exercices</h3>
-      <p>Teste tes connaissances à travers des exercices corrigés et interactifs.</p>
-      <a href="exercices.html">Faire des exercices</a>
-    </div>
-
-    <div class="card">
-      <h3>Blog</h3>
-      <p>Explore nos articles et conseils pour mieux comprendre les sciences et l’énergie solaire.</p>
-      <a href="blog.html">Lire le blog</a>
-    </div>
-  </section>
-
-  <!-- Avant-propos -->
-  <section class="avant-propos">
-    <h2>Avant-propos</h2>
-    <p>
-      Ce site a été conçu pour offrir un apprentissage moderne et accessible à tous. 
-      Que tu sois élève, enseignant ou simplement curieux, DigiSavoir t’accompagne pas à pas 
-      dans la découverte des sciences à travers des cours clairs, des exercices pratiques et des outils numériques adaptés.
-    </p>
   </section>
 
   <!-- Pied de page -->
-  <footer>
-    <p>&copy; 2025 DigiSavoir. Tous droits réservés.</p>
+  <footer class="main-footer">
+    <p>© 2025 DigiSavoir — Inspirer, apprendre, innover 🌞</p>
   </footer>
 
 </body>
