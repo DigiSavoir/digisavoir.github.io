@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>DigiSavoir - Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    /* RESET */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #f4f6f8;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* HEADER */
+    header {
+      background: linear-gradient(135deg, #0a8754, #0d5c3a);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+      opacity: 0.9;
+    }
+
+    /* HERO */
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
+      background: white;
+    }
+
+    .hero h2 {
+      font-size: 30px;
+      margin-bottom: 15px;
+      color: #0a8754;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 17px;
+    }
+
+    /* BLOG GRID */
+    .blog-grid {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 50px 20px;
+      flex-wrap: wrap;
+    }
+
+    .blog-card {
+      background: white;
+      width: 300px;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .blog-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    }
+
+    .blog-card h3 {
+      margin-bottom: 15px;
+      color: #0a8754;
+    }
+
+    .blog-card p {
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
+
+    .blog-card a {
+      text-decoration: none;
+      background: #0a8754;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    /* RETOUR */
+    .back-home {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .back-home a {
+      text-decoration: none;
+      color: #0a8754;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #0d5c3a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 28px;
+      }
+
+      .hero h2 {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>DigiSavoir</h1>
+    <p>Blog éducatif & énergies renouvelables 🌞</p>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h2>Le Blog DigiSavoir</h2>
+    <p>
+      Articles simples et accessibles pour apprendre, comprendre
+      et s’informer sur l’éducation, la physique et l’énergie solaire.
+    </p>
+  </section>
+
+  <!-- BLOG -->
+  <section class="blog-grid">
+
+    <div class="blog-card">
+      <h3>☀️ Le solaire pour les débutants</h3>
+      <p>
+        Comprendre l’énergie solaire étape par étape, sans jargon,
+        pour élèves, enseignants et curieux.
+      </p>
+      <a href="#">Lire l’article</a>
+    </div>
+
+    <div class="blog-card">
+      <h3>📘 Apprendre autrement</h3>
+      <p>
+        Pourquoi une pédagogie simple est essentielle pour réussir
+        en maths et en physique-chimie.
+      </p>
+      <a href="#">Lire l’article</a>
+    </div>
+
+    <div class="blog-card">
+      <h3>⚡ Le solaire au Sénégal</h3>
+      <p>
+        Le rôle stratégique des énergies renouvelables dans le
+        développement et l’éducation.
+      </p>
+      <a href="#">Lire l’article</a>
+    </div>
+
+  </section>
+
+  <!-- RETOUR -->
+  <div class="back-home">
+    <a href="index.html">← Retour à l’accueil</a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2025 DigiSavoir — Inspirer, apprendre, innover 🌞
+  </footer>
+
+</body>
+</html>
